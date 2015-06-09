@@ -78,14 +78,14 @@ FromLocaleString.prototype.parseFloat = function(txt) {
   return parseFloat(clean);
 };
 
-FromLocaleString.prototype.parseFloat = function(txt, base) {
+FromLocaleString.prototype.parseInt = function(txt, base) {
   "use strict";
 
   var clean = this._cleanNumber(txt);
 
   if (base) {
-    return parseFloat(clean, base);
+    return parseInt(clean, base);
   } else {
-    return parseFloat(clean);
+    return parseInt(clean);
   }
 };
