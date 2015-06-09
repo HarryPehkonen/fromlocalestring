@@ -89,3 +89,7 @@ FromLocaleString.prototype.parseInt = function(txt, base) {
     return parseInt(clean);
   }
 };
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = FromLocaleString;
+}
